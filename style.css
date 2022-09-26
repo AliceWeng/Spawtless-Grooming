@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -9,21 +10,42 @@ body {
 nav {
     min-height: 7em;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     position: relative;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+::selection {
+    color: purple;
+    background: pink;
+}
+h1 {
+    color: #d1c1d8;
+    font-size: 4rem;
+    font-family:'Tangerine';
+    margin: .2em 0;
+    text-shadow: 1px 1px gray;
+}
+.paws img {
+    width: 5em;
+    margin: 0 .6em;
 }
 .instagram img {
     width: 13em;
     border-radius: 1em;
     margin-right: 1em;
+    box-shadow: 0 0 1em rgba(255,255,255, .5);
 }
 .bg {
-    background-image: linear-gradient(50deg, white 100vw, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    background-image: linear-gradient(50deg, white 135vw, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
     background-position: left;
     background-size: 250vw;
     width: 100%;
     height: 100%;
+    box-shadow: 0 0 .5em rgba(116, 106, 121, 0.5);
     position: absolute;
     z-index: -1;
     transition: background-position 1s ease-out;
